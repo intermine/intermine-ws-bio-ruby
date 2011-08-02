@@ -48,12 +48,7 @@ Rake::TestTask.new do |t|
     t.libs << "test"
     t.test_files = FileList['test/unit_tests.rb']
     t.verbose = true
-end
-
-Rake::TestTask.new(:live_tests) do |t|
-    t.libs << "test"
-    t.test_files = FileList['test/live_test.rb']
-    t.verbose = true
+    t.warning = true
 end
 
 Rake::RDocTask.new do |t|
