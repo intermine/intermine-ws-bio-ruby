@@ -1,14 +1,14 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "intermine/version"
+require "intermine/bio"
 require "rubygems"
 
 Gem::Specification.new do |s|
-  s.name        = "intermine-bio"
-  s.version     = Intermine::VERSION
-  s.authors     = ["Alex Kalderimis"]
-  s.email       = ["dev@intermine.org"]
-  s.homepage    = "http://www.intermine.org"
+  s.name        = InterMine::Bio::NAME
+  s.version     = InterMine::Bio::VERSION
+  s.authors     = InterMine::Bio::AUTHORS
+  s.email       = InterMine::Bio::EMAIL
+  s.homepage    = InterMine::Bio::HOMEPAGE
   s.summary     = %q{Biological Extensions for the InterMine Webservice Client Library}
   s.description = File.new('README.rdoc').read
   s.add_dependency "intermine"
